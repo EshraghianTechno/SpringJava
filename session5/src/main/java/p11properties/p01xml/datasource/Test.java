@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class Test {
     public static void main(String[] args) throws SQLException {
-        var context=new GenericXmlApplicationContext();
+        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\config.xml");
         context.refresh();
         final DataSource datasource = context.getBean("datasource", DataSource.class);
