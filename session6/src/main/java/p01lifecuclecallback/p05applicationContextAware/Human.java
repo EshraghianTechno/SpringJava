@@ -10,7 +10,7 @@ public class Human {
 
 
     public Human() {
-        System.out.println("humen created");
+        System.out.println("human created");
     }
 
 

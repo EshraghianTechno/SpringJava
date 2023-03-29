@@ -7,6 +7,7 @@ public class PrototypeScope {
         System.out.println("Prototype Bean Instantiated !!");
     }
     public void setMessage(String message){
+
         this.message  = message;
     }
     public String  getMessage(){

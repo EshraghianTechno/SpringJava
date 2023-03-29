@@ -4,13 +4,20 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
-public class C01MessageDigestFactoryBean implements
-        FactoryBean<MessageDigest>
-        , InitializingBean {
+public class C01MessageDigestFactoryBean implements FactoryBean<MessageDigest> {
 
     private String algorithmName = "MD5";
-    private MessageDigest messageDigest = null;
+    private MessageDigest messageDigest;
+
+    {
+        try {
+            messageDigest = MessageDigest.getInstance(algorithmName);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void setAlgorithmName(String algorithmName) {
         this.algorithmName = algorithmName;
@@ -34,8 +41,8 @@ public class C01MessageDigestFactoryBean implements
         return MessageDigest.class;
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        messageDigest = MessageDigest.getInstance(algorithmName);
-    }
+//    @Override
+//    public void afterPropertiesSet() throws Exception {
+//        messageDigest = MessageDigest.getInstance(algorithmName);
+//    }
 }

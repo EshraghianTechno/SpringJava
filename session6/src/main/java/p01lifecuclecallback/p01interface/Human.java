@@ -7,6 +7,7 @@ public class Human implements InitializingBean, DisposableBean {
 
 
     public Human() {
+
         System.out.println("human created");
     }
 
