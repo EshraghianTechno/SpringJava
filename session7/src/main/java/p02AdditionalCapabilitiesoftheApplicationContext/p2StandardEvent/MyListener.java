@@ -11,7 +11,7 @@ public class MyListener implements ApplicationListener<ContextStartedEvent> {
 
     @Override
     public void onApplicationEvent(ContextStartedEvent event) {
-        System.out.println("ContextStartedEvent trigerd");
+        System.out.println("ContextStartedEvent triggered");
         //log
     }
 }

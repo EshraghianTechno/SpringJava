@@ -1,4 +1,4 @@
-package continueOfSession2WithSpring;
+package ir.dotin;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package continueOfSession2WithSpring;
+package ir.dotin;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

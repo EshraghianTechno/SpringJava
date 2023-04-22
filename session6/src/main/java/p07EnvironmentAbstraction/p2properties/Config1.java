@@ -15,12 +15,11 @@ public class Config1 {
     Environment env;
 
     @Bean
-    public MyBean myBean()
-    {
+    public MyBean myBean() {
 
-        MyBean myBean=new MyBean();
-        myBean.setName(env.getProperty("username"));
-     //   System.out.println(myBean.getName());
+        MyBean myBean = new MyBean();
+        myBean.setName(env.getProperty("user"));
+        //   System.out.println(myBean.getName());
         return myBean;
     }
 

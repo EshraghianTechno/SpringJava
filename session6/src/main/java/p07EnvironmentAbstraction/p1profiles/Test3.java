@@ -6,14 +6,14 @@ public class Test3 {
     public static void main(String[] args) {
         //var context=new AnnotationConfigApplicationContext(Config.class);
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext();
-        context.getEnvironment().setActiveProfiles("test");
+        context.getEnvironment().setActiveProfiles("dev");
         context.register(Config3.class);
         context.refresh();
 
 
         //
-        final BeanThree bean = context.getBean(BeanThree.class);
-        System.out.println(bean);
+//        final BeanThree bean = context.getBean(BeanThree.class);
+//        System.out.println(bean);
 
     }
 }

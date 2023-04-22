@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 //@Profile("dev")
 public class  Config {
     @Bean
-    @Profile("dev")
+    @Profile("dev1")
     public DataSource dataSource1() {
         //return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.HSQL)
               /*  .addScript("my-schema.sql")
@@ -30,6 +30,7 @@ public class  Config {
     @Profile("dev")
     public  BeanOne  beanOne()
     {
+        System.out.println("beanOne in config");
         return new BeanOne();
     }
 
@@ -37,6 +38,7 @@ public class  Config {
     @Profile("production")
     public BeanTwo beanTwo()
     {
+        System.out.println("beanTwo in config");
         return new BeanTwo();
     }
 }

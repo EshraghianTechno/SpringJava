@@ -1,11 +1,11 @@
-package continueOfSession2WithSpring;
+package ir.dotin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Client {
+public class Client2 {
 
 //    first way
 //    private ITransferService service = new MellatImpl();

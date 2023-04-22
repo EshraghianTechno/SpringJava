@@ -14,7 +14,7 @@ public class Config2 {
     @Bean
     public BeanThree beanThree()
     {
-        System.out.println("in config2");
+        System.out.println("beanThree in config2");
         return new BeanThree();
     }
 }

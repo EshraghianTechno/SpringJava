@@ -9,7 +9,8 @@ import java.util.Locale;
 public class Test {
     public static void main(String[] args) {
 
-        /*MessageSource*/  ApplicationContext resources = new FileSystemXmlApplicationContext("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session6\\session6\\src\\main\\java\\p02AdditionalCapabilitiesoftheApplicationContext\\p1InternationalizationByMessageSource\\p01xml\\config.xml");
+        /*MessageSource*/
+        ApplicationContext resources = new FileSystemXmlApplicationContext("file:F:\\SpringJava\\session7\\src\\main\\java\\p02AdditionalCapabilitiesoftheApplicationContext\\p1InternationalizationByMessageSource\\p01xml\\config.xml");
         String message = resources.getMessage("message", null, "Default", new Locale("en"));
     //    String message = resources.getMessage("message", null, "Default", new Locale("fr"));
         System.out.println(message);
