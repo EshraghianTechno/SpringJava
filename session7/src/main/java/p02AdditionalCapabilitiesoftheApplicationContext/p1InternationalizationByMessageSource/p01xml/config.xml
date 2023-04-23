@@ -13,11 +13,11 @@
 
     <bean id="messageSource"
           class="org.springframework.context.support.ResourceBundleMessageSource"
-    p:basenames-ref="basenames"
+          p:basenames-ref="basenames"
     />
-      <util:list id="basenames">
-          <value>lang</value>
-      </util:list>
+    <util:list id="basenames">
+        <value>lang</value>
+    </util:list>
 
 
-   </beans>
+</beans>

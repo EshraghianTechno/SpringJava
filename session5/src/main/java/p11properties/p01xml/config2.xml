@@ -5,12 +5,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <context:property-placeholder location="file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties"/>
+    <context:property-placeholder
+            location="file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties"/>
 
     <bean id="myProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="locations">
             <list>
-                <value>file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties</value>
+                <value>
+                    file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties
+                </value>
             </list>
         </property>
     </bean>

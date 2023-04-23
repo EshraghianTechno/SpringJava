@@ -14,10 +14,10 @@ public class Test {
 
         FoodProviderService foodProviderService = ctx.getBean("foodProviderService", FoodProviderService.class);
         List<C01Food> lunchSet = foodProviderService.provideLunchSet();
-        for (C01Food food: lunchSet) {
+        for (C01Food food : lunchSet) {
             System.out.println("Food: " + food.getName());
 
-        ctx.close();
+            ctx.close();
         }
 
     }

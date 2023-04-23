@@ -4,8 +4,8 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Test {
     public static void main(String[] args) {
-       // var context=new ClassPathXmlApplicationContext("kinder-school-config.xml");
-        GenericXmlApplicationContext context=new GenericXmlApplicationContext();
+        // var context=new ClassPathXmlApplicationContext("kinder-school-config.xml");
+        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:F:\\SpringJava\\session6\\src\\main\\java\\p03SingletonBeanswithPrototypeBeanDependencies\\problem\\config.xml");
         context.refresh();
 

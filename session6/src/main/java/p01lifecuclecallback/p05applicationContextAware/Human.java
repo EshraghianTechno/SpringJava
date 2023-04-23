@@ -14,7 +14,6 @@ public class Human {
     }
 
 
-
     @PreDestroy
     public void myDestroy() throws Exception {
 

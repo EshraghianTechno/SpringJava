@@ -4,16 +4,16 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    XML based-->
-<!--    third way using namespace-->
+    <!--    XML based-->
+    <!--    third way using namespace-->
     <bean class="ir.dotin.beandefinition.xml.BeanOne" c:_0="ali">
-<!--        first way-->
-<!--        <constructor-arg value="Elham"/>-->
+        <!--        first way-->
+        <!--        <constructor-arg value="Elham"/>-->
 
-<!--        second way-->
-<!--        <constructor-arg name="name">-->
-<!--            <value>Elham</value>-->
-<!--        </constructor-arg>-->
+        <!--        second way-->
+        <!--        <constructor-arg name="name">-->
+        <!--            <value>Elham</value>-->
+        <!--        </constructor-arg>-->
     </bean>
     <!--    XML based-->
 

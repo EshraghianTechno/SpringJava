@@ -8,6 +8,7 @@
 
     <bean class="ir.dotin.wiring.setterbased.xmlbased.SQLRepository" id="sqlRepository"></bean>
     <bean class="ir.dotin.wiring.setterbased.xmlbased.OracleRepository" id="oracleRepository"></bean>
-    <bean class="ir.dotin.wiring.setterbased.xmlbased.MyService" id="service" p:repository-ref="oracleRepository" p:name="myService">
+    <bean class="ir.dotin.wiring.setterbased.xmlbased.MyService" id="service" p:repository-ref="oracleRepository"
+          p:name="myService">
     </bean>
 </beans>

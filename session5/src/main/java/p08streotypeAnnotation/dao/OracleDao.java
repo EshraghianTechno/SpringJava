@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 //@Component
 @Repository
-public class OracleDao  implements Dao{
+public class OracleDao implements Dao {
     @Override
     public void create() {
         System.out.println("save in DB");

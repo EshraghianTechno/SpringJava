@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @Profile("dev")
-public class  Config {
+public class Config {
 //    @Bean
 //    @Profile("dev")
 //    public DataSource dataSource1() {
@@ -30,24 +30,21 @@ public class  Config {
 
     @Bean
 //    @Profile("dev")
-    public  BeanOne  beanOne()
-    {
+    public BeanOne beanOne() {
         System.out.println("BeanOne In config 1");
         return new BeanOne();
     }
 
     @Bean
 //    @Profile("production")
-    public BeanTwo beanTwo()
-    {
+    public BeanTwo beanTwo() {
         System.out.println("BeanTwo In config 1");
         return new BeanTwo();
     }
 
     @Bean
 //    @Profile("production")
-    public BeanThree beanThree()
-    {
+    public BeanThree beanThree() {
         System.out.println("BeanThree In config 1");
         return new BeanThree();
     }

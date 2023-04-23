@@ -6,8 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Config3 {
     @Bean
-    public BeanThree beanThree()
-    {
-        return  new BeanThree();
+    public BeanThree beanThree() {
+        return new BeanThree();
     }
 }

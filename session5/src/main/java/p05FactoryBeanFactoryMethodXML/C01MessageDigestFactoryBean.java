@@ -15,8 +15,8 @@ public class C01MessageDigestFactoryBean {
         this.algorithmName = algorithmName;
     }
 
-   public MessageDigest createInstance() throws NoSuchAlgorithmException {
-       return MessageDigest.getInstance(algorithmName);
-   }
+    public MessageDigest createInstance() throws NoSuchAlgorithmException {
+        return MessageDigest.getInstance(algorithmName);
+    }
 
 }

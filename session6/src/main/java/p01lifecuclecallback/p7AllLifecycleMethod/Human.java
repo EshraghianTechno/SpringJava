@@ -11,25 +11,25 @@ import org.springframework.context.ApplicationContextAware;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+
 //@Component
 @Data
-public class Human  implements InitializingBean, DisposableBean, BeanNameAware, BeanClassLoaderAware, ApplicationContextAware {
+public class Human implements InitializingBean, DisposableBean, BeanNameAware, BeanClassLoaderAware, ApplicationContextAware {
     private int age;
     private String name;
+
     public Human() {
         System.out.println("myBean created!");
     }
 
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
         System.out.println("init for @PostConstruct");
     }
 
     @PreDestroy
-    public void mydestroy()
-    {
+    public void mydestroy() {
         System.out.println("destroy for @PreDestroy");
     }
 
@@ -43,12 +43,11 @@ public class Human  implements InitializingBean, DisposableBean, BeanNameAware, 
         System.out.println("destroy for DisposableBean interface");
     }
 
-    public void myCustomInit()
-    {
+    public void myCustomInit() {
         System.out.println("init for MyCustomInit Method");
     }
-    public void myCustomDestroy()
-    {
+
+    public void myCustomDestroy() {
         System.out.println("destroy for MyCustomDestroy Method");
     }
 

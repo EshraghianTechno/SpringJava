@@ -8,12 +8,10 @@
 ">
 
 
-
-
-
-
-    <bean id="singleton" class="p03SingletonBeanswithPrototypeBeanDependencies.problem.SingletonScope" scope="singleton" p:prototypeBean-ref="prototype"/>
-    <bean id="prototype" class="p03SingletonBeanswithPrototypeBeanDependencies.problem.PrototypeScope" scope="prototype">
-        <property name="message" value="Test Message" />
+    <bean id="singleton" class="p03SingletonBeanswithPrototypeBeanDependencies.problem.SingletonScope" scope="singleton"
+          p:prototypeBean-ref="prototype"/>
+    <bean id="prototype" class="p03SingletonBeanswithPrototypeBeanDependencies.problem.PrototypeScope"
+          scope="prototype">
+        <property name="message" value="Test Message"/>
     </bean>
 </beans>

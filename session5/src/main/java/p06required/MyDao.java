@@ -9,8 +9,7 @@ public class MyDao {
         System.out.println("dao created");
     }
 
-    public void create()
-    {
+    public void create() {
         System.out.println("create method of dao invoked");
     }
 }

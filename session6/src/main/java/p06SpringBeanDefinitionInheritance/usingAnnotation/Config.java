@@ -9,16 +9,15 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
     @Bean
-    public Cat cat()
-    {
-        Cat cat=new Cat();
+    public Cat cat() {
+        Cat cat = new Cat();
         initAnimal(cat);
         cat.setLocation("tehran");
-        return  cat;
+        return cat;
 
     }
-    private void initAnimal(Animal animal)
-    {
+
+    private void initAnimal(Animal animal) {
         animal.setName("pashmalo");
         animal.setAge(3);
     }

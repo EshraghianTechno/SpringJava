@@ -5,7 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
     <bean id="complexObject" class="p12collections.p01xml.C01CollectionBean">
         <!-- results in a setAdminEmails(java.util.Properties) call -->
         <!--<property name="prop">
@@ -36,7 +35,7 @@
             <map>
                 <entry key="an entry" value="just some string"/>
                 <entry key="key2" value="value2"/>
-               <!-- <entry key="a ref" value-ref="myDataSource"/>-->
+                <!-- <entry key="a ref" value-ref="myDataSource"/>-->
             </map>
         </property>
         <!-- results in a setSomeSet(java.util.Set) call -->
@@ -44,7 +43,7 @@
             <set>
                 <value>just some string</value>
                 <value>ddddd</value>
-               <!-- <ref bean="myDataSource" />-->
+                <!-- <ref bean="myDataSource" />-->
             </set>
         </property>
     </bean>

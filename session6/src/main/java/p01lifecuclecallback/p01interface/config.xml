@@ -7,5 +7,5 @@
 
     <contex:annotation-config/>
 
-    <bean id="mybean" class="p01lifecuclecallback.p01interface.Human" />
+    <bean id="mybean" class="p01lifecuclecallback.p01interface.Human"/>
 </beans>

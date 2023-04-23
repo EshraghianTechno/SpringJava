@@ -6,11 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Config {
-    @Bean(initMethod = "myInit",destroyMethod = "myDestroy")
+    @Bean(initMethod = "myInit", destroyMethod = "myDestroy")
 //    @Bean
-    public Human human()
-    {
-        Human human=new Human();
+    public Human human() {
+        Human human = new Human();
         return human;
     }
 

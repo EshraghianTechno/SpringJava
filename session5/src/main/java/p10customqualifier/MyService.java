@@ -12,7 +12,7 @@ public class MyService {
     }
 
     @Autowired
-    @DataBaseType(value = "mongo",type = "nosql")
+    @DataBaseType(value = "mongo", type = "nosql")
     public void setDao(Dao dao) {
         this.dao = dao;
     }

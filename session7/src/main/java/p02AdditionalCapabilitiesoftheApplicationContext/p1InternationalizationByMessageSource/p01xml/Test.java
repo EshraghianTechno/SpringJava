@@ -12,7 +12,7 @@ public class Test {
         /*MessageSource*/
         ApplicationContext resources = new FileSystemXmlApplicationContext("file:F:\\SpringJava\\session7\\src\\main\\java\\p02AdditionalCapabilitiesoftheApplicationContext\\p1InternationalizationByMessageSource\\p01xml\\config.xml");
         String message = resources.getMessage("message", null, "Default", new Locale("en"));
-    //    String message = resources.getMessage("message", null, "Default", new Locale("fr"));
+        //    String message = resources.getMessage("message", null, "Default", new Locale("fr"));
         System.out.println(message);
     }
 }

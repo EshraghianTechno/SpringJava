@@ -12,15 +12,15 @@ public class IHandler implements InvocationHandler {
 
     public static Object createFor(Object target) {
         return java.lang.reflect.Proxy.newProxyInstance(target.getClass().getClassLoader(),
-                                                        target.getClass().getInterfaces(),
-                                                        new IHandler(target) );
+                target.getClass().getInterfaces(),
+                new IHandler(target));
     }
 
     // Called by dynamic proxy, when method is invoked
     @Override
     public Object invoke(Object dynamicProxy, Method method, Object[] args) throws Throwable {
 
-        System.out.println( "Dynamic Proxy Class Name: " + dynamicProxy.getClass().getName() ); // com.sun.proxy.$Proxy0
+        System.out.println("Dynamic Proxy Class Name: " + dynamicProxy.getClass().getName()); // com.sun.proxy.$Proxy0
 
         Object result;
         try {
@@ -43,5 +43,5 @@ public class IHandler implements InvocationHandler {
         return result;
 
     }
-    
+
 }

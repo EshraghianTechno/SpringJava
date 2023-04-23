@@ -1,15 +1,17 @@
 package p03SingletonBeanswithPrototypeBeanDependencies.solved.p1methodinjection;
 
-public  class PrototypeScope {
+public class PrototypeScope {
     private String message;
-    public PrototypeScope()
-    {
+
+    public PrototypeScope() {
         System.out.println("Prototype Bean Instantiated !!");
     }
-    public void setMessage(String message){
-        this.message  = message;
+
+    public void setMessage(String message) {
+        this.message = message;
     }
-    public String  getMessage(){
+
+    public String getMessage() {
         return this.message;
     }
 }

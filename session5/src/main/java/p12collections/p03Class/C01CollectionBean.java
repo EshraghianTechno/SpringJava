@@ -10,8 +10,7 @@ public class C01CollectionBean {
     @Autowired
     private List<String> myList;
 
-    public void printMyList()
-    {
+    public void printMyList() {
         System.out.println(myList);
     }
 
@@ -21,8 +20,8 @@ public class C01CollectionBean {
     public C01CollectionBean(Set<String> mySet) {
         this.mySet = mySet;
     }
-    public void printMySet()
-    {
+
+    public void printMySet() {
         System.out.println(mySet);
     }
 
@@ -32,15 +31,16 @@ public class C01CollectionBean {
     public void setMyMap(Map<Integer, String> myMap) {
         this.myMap = myMap;
     }
-    public void printMyMap()
-    {
+
+    public void printMyMap() {
         System.out.println(myMap);
     }
+
     // Injecting Bean References
     @Autowired
     private List<C04MyBean> myBeanList;
-    public void printmyBeanList()
-    {
+
+    public void printmyBeanList() {
         System.out.println(myBeanList.size());
     }
 }

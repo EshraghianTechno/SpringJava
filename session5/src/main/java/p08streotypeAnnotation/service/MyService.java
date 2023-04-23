@@ -17,8 +17,7 @@ public class MyService {
     }
 
 
-    public void create()
-    {
+    public void create() {
         dao.create();
     }
 }

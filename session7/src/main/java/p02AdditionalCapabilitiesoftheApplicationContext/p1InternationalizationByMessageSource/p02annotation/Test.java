@@ -10,7 +10,7 @@ public class Test {
 
         MessageSource resources = new AnnotationConfigApplicationContext(Config.class);
         String message = resources.getMessage("message", null, "Default", new Locale("fa"));
-    //    String message = resources.getMessage("message", null, "Default", new Locale("fr"));
+        //    String message = resources.getMessage("message", null, "Default", new Locale("fr"));
         System.out.println(message);
     }
 }

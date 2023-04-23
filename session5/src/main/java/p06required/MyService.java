@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @Component
 public class MyService {
-  private MyDao dao;
+    private MyDao dao;
 
     public MyService() {
         System.out.println("service created!");
@@ -25,8 +25,8 @@ public class MyService {
    }*/
 
     @Autowired
-    public void setDao( Optional<MyDao> dao) {
-        dao.ifPresent(myDao -> this.dao=myDao);
+    public void setDao(Optional<MyDao> dao) {
+        dao.ifPresent(myDao -> this.dao = myDao);
     }
 
     public MyDao getDao() {

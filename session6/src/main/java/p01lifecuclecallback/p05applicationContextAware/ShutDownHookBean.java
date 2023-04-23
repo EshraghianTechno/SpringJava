@@ -11,9 +11,10 @@ import org.springframework.stereotype.Component;
 public class ShutDownHookBean implements ApplicationContextAware {
 
     ApplicationContext context;
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-         this.context=applicationContext;
+        this.context = applicationContext;
         if (applicationContext instanceof GenericApplicationContext)
             ((GenericApplicationContext) applicationContext).registerShutdownHook();
     }

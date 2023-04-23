@@ -13,8 +13,6 @@ public class Human {
     }
 
 
-
-
     public void myDestroy() throws Exception {
 
         System.out.println("destroy method of my bean called");

@@ -7,7 +7,7 @@ public class Test4 {
         GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:F:\\SpringJava\\session4\\src\\main\\java\\ir\\dotin\\config.xml");
         context.refresh();
-        BeanOne beanOne =  context.getBean(BeanOne.class);
+        BeanOne beanOne = context.getBean(BeanOne.class);
         System.out.println(beanOne.name);
     }
 }

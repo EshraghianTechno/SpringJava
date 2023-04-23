@@ -8,7 +8,7 @@ public class Test {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
         Client2 client = (Client2) applicationContext.getBean("client");
-        client.callTransfer(124,875);
+        client.callTransfer(124, 875);
 
     }
 }

@@ -20,8 +20,7 @@ public class MyController {
         this.myService = myService;
     }
 
-   public void create()
-    {
+    public void create() {
         myService.create();
     }
 }

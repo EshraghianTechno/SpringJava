@@ -4,10 +4,10 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Test {
     public static void main(String[] args) {
-        GenericXmlApplicationContext context=new GenericXmlApplicationContext();
+        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session5\\session5\\src\\main\\java\\p03SingletonBeanswithPrototypeBeanDependencies\\solved\\p2UseofApplicationContextAware\\config.xml");
         context.refresh();
-         SingletonBean singleton1 = context.getBean(SingletonBean.class, "singletonBean");
+        SingletonBean singleton1 = context.getBean(SingletonBean.class, "singletonBean");
         System.out.println(singleton1);
         System.out.println(singleton1.getPrototypeBean());
         //2

@@ -13,12 +13,12 @@
 ">
 
 
-   <context:component-scan base-package="p12collections"/>
+    <context:component-scan base-package="p12collections"/>
 
-   <util:map id="map" map-class="java.util.HashMap">
-       <entry key="key1" value="key1"/>
-       <entry key="key2" value="key2"/>
-   </util:map>
+    <util:map id="map" map-class="java.util.HashMap">
+        <entry key="key1" value="key1"/>
+        <entry key="key2" value="key2"/>
+    </util:map>
 
     <util:properties id="props">
         <prop key="firstName">Ali</prop>

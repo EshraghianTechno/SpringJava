@@ -4,7 +4,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Test {
     public static void main(String[] args) {
-        GenericXmlApplicationContext context=new GenericXmlApplicationContext();
+        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session5\\session5\\src\\main\\java\\p03SingletonBeanswithPrototypeBeanDependencies\\solved\\p3aopscopedproxy\\config.xml");
         context.refresh();
         final SingletonScope bean = context.getBean(SingletonScope.class);

@@ -8,7 +8,7 @@
     <context:component-scan base-package="p07mixconfig.p01xml"/>
 
 
-   <!-- <import resource=""-->
+    <!-- <import resource=""-->
 
 
     <bean class="p07mixconfig.p01xml.BeanOne" id="beanOne"/>

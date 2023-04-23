@@ -7,13 +7,13 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan(basePackages = "ir.dotin.beandefinition.annotationclassconfig")
 public class Config {
     @Bean
-    public MyRepository repository(){
+    public MyRepository repository() {
         /// we can do every thing with our object
         return new MyRepository();
     }
 
     @Bean
-    public MyService service(){
+    public MyService service() {
         /// we can do every thing with our object
         return new MyService();
     }

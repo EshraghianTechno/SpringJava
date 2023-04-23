@@ -12,8 +12,7 @@ public class Config2 {
 
 
     @Bean
-    public BeanThree beanThree()
-    {
+    public BeanThree beanThree() {
         System.out.println("beanThree in config2");
         return new BeanThree();
     }

@@ -9,7 +9,8 @@ public class MyService {
 
     private Repository repository;
 
-    public MyService() {}
+    public MyService() {
+    }
 
     public Repository getRepository() {
         return repository;

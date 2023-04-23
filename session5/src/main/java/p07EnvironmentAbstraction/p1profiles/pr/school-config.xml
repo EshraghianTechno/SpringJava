@@ -8,7 +8,5 @@
 >
 
 
-
-
     <bean class="p07EnvironmentAbstraction.p1profiles.pr.school.FoodProviderServiceImpl" id="foodProviderService"/>
 </beans>

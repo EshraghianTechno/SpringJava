@@ -11,7 +11,6 @@ public class C1MyEvent extends ApplicationEvent {
     private String message;
 
 
-
     public C1MyEvent(Object source, String message) {
         super(source);
         this.message = message;

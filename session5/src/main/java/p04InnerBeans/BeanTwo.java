@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class BeanTwo {
-private  String name;
+    private String name;
 
 }

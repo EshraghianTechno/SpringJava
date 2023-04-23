@@ -11,5 +11,5 @@ public class Target {
     @NonNull
     private BeanTwo beanTwo;
     @NonNull
-    private  BeanThree beanThree;
+    private BeanThree beanThree;
 }

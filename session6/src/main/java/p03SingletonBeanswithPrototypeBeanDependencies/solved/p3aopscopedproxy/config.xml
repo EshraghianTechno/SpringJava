@@ -8,16 +8,15 @@
         https://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-
-
-
-
-    <bean id="prototypeBean" class="p03SingletonBeanswithPrototypeBeanDependencies.solved.p3aopscopedproxy.PrototypeScope" scope="prototype">
-        <property name="message" value="Test Message" />
+    <bean id="prototypeBean"
+          class="p03SingletonBeanswithPrototypeBeanDependencies.solved.p3aopscopedproxy.PrototypeScope"
+          scope="prototype">
+        <property name="message" value="Test Message"/>
         <aop:scoped-proxy/>
     </bean>
-    <bean id="singletonBean" class="p03SingletonBeanswithPrototypeBeanDependencies.solved.p3aopscopedproxy.SingletonScope" p:prototypeBean-ref="prototypeBean" />
-
+    <bean id="singletonBean"
+          class="p03SingletonBeanswithPrototypeBeanDependencies.solved.p3aopscopedproxy.SingletonScope"
+          p:prototypeBean-ref="prototypeBean"/>
 
 
 </beans>

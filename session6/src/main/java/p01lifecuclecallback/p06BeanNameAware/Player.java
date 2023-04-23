@@ -9,11 +9,10 @@ public class Player implements BeanNameAware {
 
     @Override
     public void setBeanName(String name) {
-        this.name=name;
+        this.name = name;
     }
 
-    void play()
-    {
-        System.out.println("player "+name+ " is playing");
+    void play() {
+        System.out.println("player " + name + " is playing");
     }
 }

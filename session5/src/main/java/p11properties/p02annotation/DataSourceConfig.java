@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 @PropertySource("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\p01xml\\datasource\\datasource.properties")
 public class DataSourceConfig {
 
-   // @Value("com.mysql.cj.jdbc.Driver")
+    // @Value("com.mysql.cj.jdbc.Driver")
     @Value("${jdbc.driver}")
     private String driverClassName;
     @Value("${jdbc.url}")
@@ -26,17 +26,16 @@ public class DataSourceConfig {
     @Value("${jdbc.password}")
     private String password;
 
-   /* @Bean
-    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer()
-    {
-        PropertySourcesPlaceholderConfigurer configurer=new PropertySourcesPlaceholderConfigurer();
-        configurer.setLocation(new FileSystemResource("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\p01xml\\datasource\\datasource.properties"));
-        return configurer;
-    }*/
+    /* @Bean
+     public static PropertySourcesPlaceholderConfigurer placeholderConfigurer()
+     {
+         PropertySourcesPlaceholderConfigurer configurer=new PropertySourcesPlaceholderConfigurer();
+         configurer.setLocation(new FileSystemResource("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\p01xml\\datasource\\datasource.properties"));
+         return configurer;
+     }*/
     @Bean
-    public DataSource dataSource()
-    {
-        BasicDataSource dataSource=new BasicDataSource();
+    public DataSource dataSource() {
+        BasicDataSource dataSource = new BasicDataSource();
         dataSource.setUrl(url);
         dataSource.setUsername(username);
         dataSource.setPassword(password);

@@ -7,7 +7,7 @@ public class Test4 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         MyService myService = new MyService();
-        context.registerBean("service", MyService.class, ()->myService);
+        context.registerBean("service", MyService.class, () -> myService);
         context.registerBean("service1",
                 MyService.class,
                 () -> myService,

@@ -10,7 +10,7 @@
 
     <bean id="md5"
           class="p05FactoryBeanFactoryMethodXML.C01MessageDigestFactoryBean"
-          />
+    />
 
 
     <bean id="shaDigest"

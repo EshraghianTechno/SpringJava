@@ -5,7 +5,7 @@ import p02autowiring.Target;
 
 public class Test {
     public static void main(String[] args) {
-        GenericXmlApplicationContext context=new GenericXmlApplicationContext();
+        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:F:\\SpringJava\\session5\\src\\main\\java\\p05dependon\\p01xml\\config.xml");
         context.refresh();
 

@@ -7,5 +7,6 @@
 >
 
 
-    <bean class="p01EnvironmentAbstraction.p1profiles.p1xml.kindergarten.FoodProviderServiceImpl" id="foodProviderService" />
+    <bean class="p01EnvironmentAbstraction.p1profiles.p1xml.kindergarten.FoodProviderServiceImpl"
+          id="foodProviderService"/>
 </beans>

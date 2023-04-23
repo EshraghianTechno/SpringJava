@@ -9,10 +9,9 @@ import org.springframework.context.annotation.Lazy;
 @ComponentScan(basePackages = {"p01lifecuclecallback.p7AllLifecycleMethod"})
 public class Config {
     @Lazy
-    @Bean(initMethod = "myCustomInit",destroyMethod = "myCustomDestroy")
-    public Human getHumanOne()
-    {
-        Human human=new Human();
+    @Bean(initMethod = "myCustomInit", destroyMethod = "myCustomDestroy")
+    public Human getHumanOne() {
+        Human human = new Human();
         human.setAge(12);
         human.setName("ali");
         return human;

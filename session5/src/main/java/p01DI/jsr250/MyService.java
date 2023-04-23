@@ -22,7 +22,7 @@ public class MyService {
 
 
     @Resource(name = "repo1")
-    public void setRepository( Repository repository) {
+    public void setRepository(Repository repository) {
         this.repository = repository;
     }
 }

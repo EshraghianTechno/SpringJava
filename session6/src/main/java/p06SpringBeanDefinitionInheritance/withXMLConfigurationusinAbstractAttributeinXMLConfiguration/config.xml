@@ -7,19 +7,22 @@
 ">
 
 
-
-    <bean id="animal" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Animal" abstract="true" init-method="initA">
-       <property name="name" value="miomio"/>
+    <bean id="animal"
+          class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Animal"
+          abstract="true" init-method="initA">
+        <property name="name" value="miomio"/>
         <property name="age" value="2"/>
-     </bean>
+    </bean>
 
-    <bean id="cat" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Cat" parent="animal" init-method="initA">
+    <bean id="cat"
+          class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Cat"
+          parent="animal" init-method="initA">
         <property name="location" value="tehran"/>
         <property name="age" value="12"/>
     </bean>
 
-  <!--  <bean id="dog" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Dog" parent="animal" >
-        <property name="age" value="12"/>
-    </bean>-->
+    <!--  <bean id="dog" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Dog" parent="animal" >
+          <property name="age" value="12"/>
+      </bean>-->
 
 </beans>

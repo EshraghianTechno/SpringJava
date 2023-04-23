@@ -10,9 +10,9 @@ import java.util.*;
 public class C02CollectionConfig {
     @Bean
     public C01CollectionBean getCollectionsBean() {
-       // return new C01CollectionBean();
-        C01CollectionBean bean= new C01CollectionBean(new HashSet<>(Arrays.asList("John", "Adam", "Harry")));
-        Map<Integer, String>  myMap = new HashMap<>();
+        // return new C01CollectionBean();
+        C01CollectionBean bean = new C01CollectionBean(new HashSet<>(Arrays.asList("John", "Adam", "Harry")));
+        Map<Integer, String> myMap = new HashMap<>();
         myMap.put(1, "aa");
         myMap.put(2, "bb");
         myMap.put(3, "cc");
@@ -31,11 +31,13 @@ public class C02CollectionConfig {
     public C04MyBean bean1() {
         return new C04MyBean("11");
     }
+
     @Bean
     @Order(3)
     public C04MyBean bean2() {
         return new C04MyBean("22");
     }
+
     @Bean
     @Order(1)
     public C04MyBean bean3() {

@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 public class Test {
     public static void main(String[] args) throws SQLException {
-        AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(DataSourceConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DataSourceConfig.class);
         final DataSource datasource = context.getBean("dataSource", DataSource.class);
         final Connection connection = datasource.getConnection();
         final PreparedStatement preparedStatement = connection.prepareStatement("select * from product");

@@ -8,8 +8,7 @@
 ">
 
 
-
-  <bean id="productDao" class="p02BeanScopes.p02prototype.ProductDao" scope="prototype" />
+    <bean id="productDao" class="p02BeanScopes.p02prototype.ProductDao" scope="prototype"/>
 
 
     <bean id="productService1" class="p02BeanScopes.p02prototype.ProductService"

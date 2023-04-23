@@ -7,7 +7,7 @@ public class Test4 {
         GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         context.load("file:F:\\SpringJava\\session4\\src\\main\\java\\ir\\dotin\\annotationcomponentscan\\config.xml");
         context.refresh();
-        MyService myService =  context.getBean(MyService.class);
+        MyService myService = context.getBean(MyService.class);
         System.out.println(myService.getMyRepository());
     }
 }

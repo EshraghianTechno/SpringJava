@@ -3,9 +3,11 @@ package p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttri
 public abstract class Animal {
     private String name;
     private Integer age;
+
     public void initA() {
         System.out.println("Inside initA()");
     }
+
     public String getName() {
         return name;
     }

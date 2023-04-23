@@ -9,13 +9,12 @@ import org.springframework.context.event.EventListener;
 @ComponentScan(basePackages = {"p02AdditionalCapabilitiesoftheApplicationContext.p3CustomEvent"})
 public class Config {
     @Bean
-    public C2MyEventPublisher publisher()
-    {
+    public C2MyEventPublisher publisher() {
         return new C2MyEventPublisher();
     }
+
     @Bean
-    public C3MyListener userListener()
-    {
+    public C3MyListener userListener() {
         return new C3MyListener();
     }
 

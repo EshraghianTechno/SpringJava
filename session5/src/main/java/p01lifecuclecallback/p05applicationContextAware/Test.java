@@ -5,14 +5,14 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Test {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 
-      //  var context=new GenericXmlApplicationContext();
-       // context.load("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session5\\session5\\src\\main\\java\\p01lifecuclecallback\\p05applicationContextAware\\config.xml");
+        //  var context=new GenericXmlApplicationContext();
+        // context.load("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session5\\session5\\src\\main\\java\\p01lifecuclecallback\\p05applicationContextAware\\config.xml");
 
 
         // context.close();
         //or
-    //   context.registerShutdownHook();
+        //   context.registerShutdownHook();
     }
 }

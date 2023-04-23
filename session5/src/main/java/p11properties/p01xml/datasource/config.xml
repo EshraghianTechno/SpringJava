@@ -5,7 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <context:property-placeholder location="file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties"/>
+    <context:property-placeholder
+            location="file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties"/>
 
     <!--<bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="properties">
