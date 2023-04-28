@@ -14,7 +14,7 @@ public class C04DynamicPointcutDemo {
         pf.setTarget(target);
 
         C01MyBean proxy = (C01MyBean) pf.getProxy();
-        proxy.m1(101                );
+        proxy.m1(101);
         //  proxy.m1(200);
         //  proxy.m1(303);
 
