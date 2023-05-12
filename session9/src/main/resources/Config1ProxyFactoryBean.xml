@@ -48,7 +48,7 @@
           p:advice-ref="advice">
         <property name="pointcut">
             <bean class="org.springframework.aop.aspectj.AspectJExpressionPointcut"
-                  p:expression="execution(* talk*(..))"
+                  p:expression="execution(* code*(..))"
             />
         </property>
     </bean>

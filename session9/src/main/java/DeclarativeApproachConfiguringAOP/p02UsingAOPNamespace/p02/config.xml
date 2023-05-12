@@ -28,14 +28,14 @@
 
     <bean id="employeeAspect" class="DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeAspect"/>
 
-    <!-- <aop:config>
-         <aop:pointcut id="beforeFind" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.findEmployee())"/>
-         <aop:aspect id="employeeAspect" ref="employeeAspect">
-              <aop:before method="beforeFindEmployeeAdvice1" pointcut-ref="beforeFind" />
-         </aop:aspect>
-     </aop:config>-->
+<!--     <aop:config>-->
+<!--         <aop:pointcut id="beforeFind" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.findEmployee())"/>-->
+<!--         <aop:aspect id="employeeAspect" ref="employeeAspect">-->
+<!--              <aop:before method="beforeFindEmployeeAdvice1" pointcut-ref="beforeFind" />-->
+<!--         </aop:aspect>-->
+<!--     </aop:config>-->
 
-    <!-- <aop:config>
+     <!--<aop:config>
          <aop:aspect ref="employeeAspect">
              <aop:pointcut id="nezartRoaAterFindById" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.findEmployeeById(..))"/>
              <aop:after-returning method="afterfindByIdEmployeeAdvice2" pointcut-ref="nezartRoaAterFindById" returning="result"/>
@@ -48,7 +48,7 @@
         <aop:pointcut id="nezarat2"
                       expression="execution(Integer DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02..*(..))"/>  <!--for method with argument-->
         <aop:aspect id="employeeAspect" ref="employeeAspect">
-            <aop:around method="createEmployeeAdvice" pointcut-ref="nezarat2"/>
+            <aop:around method="createEmployeeAdvice" pointcut-ref="nezarat1"/>
         </aop:aspect>
     </aop:config>
 

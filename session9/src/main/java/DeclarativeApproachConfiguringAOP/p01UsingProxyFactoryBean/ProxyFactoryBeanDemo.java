@@ -6,7 +6,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class ProxyFactoryBeanDemo {
     public static void main(String[] args) {
-        var context = new GenericXmlApplicationContext();
+        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
         new XmlBeanDefinitionReader(context).loadBeanDefinitions("Config1ProxyFactoryBean.xml");
         context.refresh();
 

@@ -22,7 +22,7 @@ public class RegexPointcutDemo {
       proxy.code2();
       proxy.rest();
 */
-        var context = new AnnotationConfigApplicationContext(AopConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AopConfig.class);
         JavaProgrammer javaProgrammer = (JavaProgrammer) context.getBean("hassan");
         Office office = (Office) context.getBean("office");
         //javaProgrammer.code();

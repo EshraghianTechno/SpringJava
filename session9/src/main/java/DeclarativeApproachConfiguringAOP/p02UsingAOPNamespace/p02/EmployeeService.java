@@ -33,16 +33,15 @@ public class EmployeeService {
         return 12;
     }
 
-    public List<Employee> findAllEmployees() {
-        return new ArrayList<>(List.of(
-                new Employee("mohammad"),
-                new Employee("neda"),
-                new Employee("ashkan")
-        ));
-    }
+//    public List<Employee> findAllEmployees() {
+//        return new ArrayList<>(List.of(
+//                new Employee("mohammad"),
+//                new Employee("neda"),
+//                new Employee("ashkan")
+//        ));
+//    }
 
     public void deleteEmployee() {
-
         System.out.println("delete employee obj");
     }
 

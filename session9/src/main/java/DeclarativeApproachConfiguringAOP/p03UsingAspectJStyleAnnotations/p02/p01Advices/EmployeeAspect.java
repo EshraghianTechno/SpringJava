@@ -32,15 +32,18 @@ public class EmployeeAspect {
     //@Before("execution( *  ir..*.*e*())")
     // @Before("execution( *  *.*e*())")
     // @Before("execution( void add*())")
-   /* @Before("execution(public * add*())")
+    @Before("execution(public * add*())")
     public void addEmployeeAdvice() throws Throwable {
        // System.out.println("Before Employee insert in DB");
         log.info("========>executing @Before advice on createEmployeeAdvice()");
-    }*/
-    @AfterReturning(value = "execution(* DeclarativeApproachConfiguringAOP.p03UsingAspectJStyleAnnotations.p02.p01Advices.EmployeeService.findEmployee())", returning = "result")
+    }
+
+//    @AfterReturning(value = "execution(* DeclarativeApproachConfiguringAOP.p03UsingAspectJStyleAnnotations.p02.p01Advices.EmployeeService.findEmployee())", returning = "result")
     public void findEmployeeAdvice(Object result) {
         System.out.println("Horaaaa " + result);
     }
+
+
   /* @AfterThrowing(value="execution(* DeclarativeApproachConfiguringAOP.p03UsingAspectJStyleAnnotations.p02.p01Advices.EmployeeService.errorrrrrr(..))",throwing = "e")
     public void khata(Exception e)
     {
