@@ -12,5 +12,11 @@
 </head>
 <body>
 Hello Spring web
+
+<%
+    String name =(String) request.getAttribute("name");
+    out.print(request.getMethod());
+    out.print(name);
+%>
 </body>
 </html>

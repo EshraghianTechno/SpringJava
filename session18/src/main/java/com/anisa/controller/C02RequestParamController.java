@@ -12,7 +12,7 @@ public class C02RequestParamController {
 
 
     @GetMapping("/getproductparam")
-    public ModelAndView getProductWithParm(@RequestParam(value = "id") Long id,@RequestParam("name") String name)
+    public ModelAndView getProductWithParm(@RequestParam("id") Long id,@RequestParam("name") String name)
     {
         Product product=new Product(id,name);
         System.out.println(product);

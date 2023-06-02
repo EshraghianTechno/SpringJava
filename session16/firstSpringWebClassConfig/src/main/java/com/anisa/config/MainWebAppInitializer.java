@@ -15,15 +15,12 @@ public class MainWebAppInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(javax.servlet.ServletContext servletContext) throws ServletException {
 
-        AnnotationConfigWebApplicationContext root = new AnnotationConfigWebApplicationContext();
-        root.scan("com.anisa");
+        AnnotationConfigWebApplicationContext webApplicationContext  = new AnnotationConfigWebApplicationContext();
+        webApplicationContext.scan("com.anisa");
 
-
-        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(root));
+        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(webApplicationContext));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
-
-
     }
    /* @Override
     protected WebApplicationContext createServletApplicationContext() {

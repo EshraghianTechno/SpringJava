@@ -18,9 +18,9 @@ import java.util.Map;
 public class C04RequestHeaderController {
 
     @GetMapping("/h1")
-    public String header1(@RequestHeader("User-Agent") String header, Model model)
+    public String header1(@RequestHeader("User-Agent") String userAgent, Model model)
     {
-        System.out.println(header);
+        System.out.println(userAgent);
         return "home";
     }
 

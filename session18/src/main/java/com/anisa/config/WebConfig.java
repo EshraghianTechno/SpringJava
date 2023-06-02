@@ -12,8 +12,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.util.UrlPathHelper;
 
 @Configuration
-@EnableWebMvc
-@ComponentScan(basePackages ={"com.anisa"} )
+//@EnableWebMvc
+//@ComponentScan(basePackages ={"com.anisa"} )
 public class WebConfig implements WebMvcConfigurer {
 
     @Override
