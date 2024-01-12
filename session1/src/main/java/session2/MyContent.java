@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.util.Properties;
 
 public class MyContent {
-    private final String configFile = "src/main/java/session2/my-context.txt";
+    private final String configFile = "F:\\SpringJava\\session1\\src\\main\\java\\session2\\my-context.txt";
 
     public Object getBean(String id) {
         Object obj = null;
