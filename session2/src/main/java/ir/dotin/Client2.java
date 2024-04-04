@@ -17,7 +17,7 @@ public class Client2 {
     private ITransferService service;
 
 
-    public Boolean callTransfer(long cardNumber, double amount) {
+    public Boolean   callTransfer(long cardNumber, double amount) {
         System.out.println("Call transfer ...");
         service.transfer(cardNumber, amount);
         System.out.println("!!!!!!Test Git");
