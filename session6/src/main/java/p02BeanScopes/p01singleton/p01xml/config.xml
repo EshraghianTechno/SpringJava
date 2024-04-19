@@ -9,6 +9,7 @@
 
 
     <bean id="productDao" class="p02BeanScopes.p01singleton.p01xml.ProductDao" scope="singleton"/>
+    <bean id="productDao1" class="p02BeanScopes.p01singleton.p01xml.ProductDao" scope="singleton"/>
 
 
     <bean id="productService1" class="p02BeanScopes.p01singleton.p01xml.ProductService"
@@ -16,5 +17,5 @@
     <bean id="productService2" class="p02BeanScopes.p01singleton.p01xml.ProductService"
           p:productDao-ref="productDao"/>
     <bean id="productService3" class="p02BeanScopes.p01singleton.p01xml.ProductService"
-          p:productDao-ref="productDao"/>
+          p:productDao-ref="productDao1"/>
 </beans>

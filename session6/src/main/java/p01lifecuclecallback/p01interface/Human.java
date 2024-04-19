@@ -7,13 +7,11 @@ public class Human implements InitializingBean, DisposableBean {
 
 
     public Human() {
-
         System.out.println("human created");
     }
 
     @Override
     public void destroy() throws Exception {
-
         System.out.println("destroy method of my bean called");
     }
 

@@ -8,8 +8,9 @@ public class Test4 {
         context.load("file:F:\\SpringJava\\session4\\src\\main\\java\\ir\\dotin\\beandefinition\\xml\\config.xml");
         context.refresh();
         BeanOne beanOne = context.getBean(BeanOne.class);
-        Object beanOne1 = context.getBean("beanOne");
+        BeanOne beanOne1 = (BeanOne) context.getBean("beanOne");
         System.out.println(beanOne.getName());
-        System.out.println(((BeanOne) beanOne1).getName());
+        System.out.println(beanOne.getAge());
+        System.out.println(beanOne1.getName());
     }
 }

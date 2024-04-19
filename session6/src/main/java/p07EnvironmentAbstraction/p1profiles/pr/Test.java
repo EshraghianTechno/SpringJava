@@ -7,8 +7,8 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session5\\session5\\src\\main\\java\\p07EnvironmentAbstraction\\p1profiles\\pr\\school-config.xml");
-        ctx.load("file:C:\\Users\\Admin\\IdeaProjects\\spring\\5\\session5\\session5\\src\\main\\java\\p07EnvironmentAbstraction\\p1profiles\\pr\\kinder-config.xml");
+        ctx.load("file:F:\\SpringJava\\session6\\src\\main\\java\\p07EnvironmentAbstraction\\p1profiles\\pr\\kinder-config.xml");
+        ctx.load("file:F:\\SpringJava\\session6\\src\\main\\java\\p07EnvironmentAbstraction\\p1profiles\\pr\\school-config.xml");
 
         ctx.refresh();
 

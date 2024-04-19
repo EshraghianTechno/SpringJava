@@ -9,6 +9,9 @@ public class Test {
 
 
         context.refresh();
+        System.out.println("before close context");
         context.close();
+        System.out.println("after close context");
+
     }
 }

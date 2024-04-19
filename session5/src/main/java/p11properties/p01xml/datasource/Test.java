@@ -11,14 +11,15 @@ import java.sql.SQLException;
 public class Test {
     public static void main(String[] args) throws SQLException {
         GenericXmlApplicationContext context = new GenericXmlApplicationContext();
-        context.load("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\config.xml");
+        context.load("file:F:\\SpringJava\\session5\\src\\main\\java\\p11properties\\p01xml\\datasource\\config.xml");
         context.refresh();
-        final DataSource datasource = context.getBean("datasource", DataSource.class);
-        final Connection connection = datasource.getConnection();
-        final PreparedStatement preparedStatement = connection.prepareStatement("select * from product");
-        final ResultSet resultSet = preparedStatement.executeQuery();
-        while (resultSet.next())
-            System.out.println(resultSet.getString("name"));
+        Object datasource = context.getBean("datasource");
+        System.out.println(datasource);
+//        final Connection connection = datasource.getConnection();
+//        final PreparedStatement preparedStatement = connection.prepareStatement("select * from product");
+//        final ResultSet resultSet = preparedStatement.executeQuery();
+//        while (resultSet.next())
+//            System.out.println(resultSet.getString("name"));
 
 
     }

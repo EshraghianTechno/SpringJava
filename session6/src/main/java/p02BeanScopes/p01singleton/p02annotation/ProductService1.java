@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductService1 {
     @Autowired
-    private final MysqlProductDao productDao;
+     MysqlProductDao productDao;
 
 
     public MysqlProductDao getProductDao() {

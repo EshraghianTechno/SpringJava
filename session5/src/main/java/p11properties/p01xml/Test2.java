@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Test2 {
     public static void main(String[] args) throws SQLException {
         GenericXmlApplicationContext context = new GenericXmlApplicationContext();
-        context.load("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\config2.xml");
+        context.load("file:F:\\SpringJava\\session5\\src\\main\\java\\p11properties\\p01xml\\datasource\\datasource.properties");
         context.refresh();
 
 

@@ -16,7 +16,7 @@
 
     <bean id="cat"
           class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Cat"
-          parent="animal" init-method="initA">
+          parent="animal" init-method="initC">
         <property name="location" value="tehran"/>
         <property name="age" value="12"/>
     </bean>

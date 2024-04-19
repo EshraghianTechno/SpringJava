@@ -1,7 +1,6 @@
 package p04FactoryBean.p01xml;
 
 import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.InitializingBean;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

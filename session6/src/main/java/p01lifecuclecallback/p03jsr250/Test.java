@@ -6,6 +6,8 @@ public class Test {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 
+        System.out.println("before close context");
         context.close();
+        System.out.println("after close context");
     }
 }

@@ -9,8 +9,17 @@ import org.springframework.context.annotation.DependsOn;
 @ComponentScan(basePackages = {"p05dependon.p02annotation"})
 public class Config {
     @Bean
-    @DependsOn({"", ""})
+    @DependsOn({"beanTwo", "beanThree"})
     public BeanOne beanOne() {
         return new BeanOne();
+    }
+
+    @Bean
+    public BeanTwo beanTwo(){
+        return new BeanTwo();
+    }
+    @Bean
+    public BeanThree beanThree(){
+        return new BeanThree();
     }
 }

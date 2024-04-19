@@ -14,8 +14,6 @@ public class Test {
         Player bean = context.getBean(Player.class);
         bean.play();
 
-        // context.close();
-        //or
-        //   context.registerShutdownHook();
+
     }
 }

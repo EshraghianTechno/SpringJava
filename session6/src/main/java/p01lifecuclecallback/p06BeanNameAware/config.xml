@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="mahsa147" class="p01lifecuclecallback.p06BeanNameAware.Player"/>
+    <bean class="p01lifecuclecallback.p06BeanNameAware.Player" name="Elham" id="mahsa11147" />
 </beans>

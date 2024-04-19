@@ -5,24 +5,22 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
+<!--    first method-->
     <context:property-placeholder
-            location="file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties"/>
+            location="file:F:\SpringJava\session5\src\main\java\p11properties\p01xml\datasource\datasource.properties"/>
 
-    <!--<bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-        <property name="properties">
-            <value>
-                jdbc.url=jdbc:mysql://localhost:3306/myspring
-                jdbc.driver=com.mysql.cj.jdbc.Driver
-                jdbc.username=root
-                jdbc.password=1234
-            </value>
-        </property>
-    </bean>
+<!--    second method-->
+<!--    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">-->
+<!--        <property name="properties">-->
+<!--            <value>-->
+<!--                jdbc.url=jdbc:mysql://localhost:3306/myspring-->
+<!--                jdbc.driver=com.mysql.cj.jdbc.Driver-->
+<!--                jdbc.username=root-->
+<!--                jdbc.password=1234-->
+<!--            </value>-->
+<!--        </property>-->
+<!--    </bean>-->
 
-    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-        <property name="location"
-                  value="file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties"/>
-    </bean>-->
 
     <bean id="datasource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="${jdbc.driver}"/>
@@ -30,4 +28,5 @@
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
     </bean>
+
 </beans>

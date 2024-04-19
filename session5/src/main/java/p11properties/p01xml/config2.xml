@@ -12,7 +12,7 @@
         <property name="locations">
             <list>
                 <value>
-                    file:C:\Users\titan\IdeaProjects\spring\5\session4\session4\src\main\java\p11properties\datasource.properties
+                    file:F:\SpringJava\session5\src\main\java\p11properties\p01xml\datasource\datasource.properties
                 </value>
             </list>
         </property>

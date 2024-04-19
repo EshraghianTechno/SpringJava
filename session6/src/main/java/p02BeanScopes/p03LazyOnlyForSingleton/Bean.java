@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 //@Lazy
 public class Bean {
-
     public Bean() {
         System.out.println("bean created!");
     }

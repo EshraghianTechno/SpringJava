@@ -6,7 +6,7 @@
 
     <!--    XML based-->
     <!--    third way using namespace-->
-    <bean class="ir.dotin.beandefinition.xml.BeanOne" c:_0="ali">
+    <bean class="ir.dotin.beandefinition.xml.BeanOne"  id="beanOne" c:_0="ali" c:_1="12">
         <!--        first way-->
         <!--        <constructor-arg value="Elham"/>-->
 

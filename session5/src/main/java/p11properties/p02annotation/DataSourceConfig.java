@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = {"p11properties.p02annotation"})
-@PropertySource("file:C:\\Users\\titan\\IdeaProjects\\spring\\5\\session4\\session4\\src\\main\\java\\p11properties\\p01xml\\datasource\\datasource.properties")
+@PropertySource("file:F:\\SpringJava\\session5\\src\\main\\java\\p11properties\\p01xml\\datasource\\datasource.properties")
 public class DataSourceConfig {
 
     // @Value("com.mysql.cj.jdbc.Driver")
