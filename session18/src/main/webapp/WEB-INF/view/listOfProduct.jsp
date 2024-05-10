@@ -9,7 +9,8 @@
 
 <select >
     <c:forEach  var="product" items="${products}">
-        <option id="${product.id}"><c:out value="${product.name}"/></option>
+        <option id="${product.id}">
+            <c:out value="${product.name}"/></option>
     </c:forEach>
 </select>
 

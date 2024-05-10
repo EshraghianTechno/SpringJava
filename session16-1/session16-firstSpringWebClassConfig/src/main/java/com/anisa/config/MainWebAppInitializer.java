@@ -1,8 +1,12 @@
 package com.anisa.config;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -12,8 +16,9 @@ public class MainWebAppInitializer implements WebApplicationInitializer {
     public void onStartup(javax.servlet.ServletContext servletContext) throws ServletException {
 
         AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
+
         webApplicationContext.scan("com.anisa");
-        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("myDispatcher", new DispatcherServlet(webApplicationContext));
+        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(webApplicationContext));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
 
