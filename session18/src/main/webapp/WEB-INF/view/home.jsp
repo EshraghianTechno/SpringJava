@@ -14,7 +14,7 @@
 home
 
 <%
-    String name =(String) request.getAttribute("name");
+    String name = (String) request.getAttribute("name");
     out.print(request.getMethod());
     out.print(name);
 %>

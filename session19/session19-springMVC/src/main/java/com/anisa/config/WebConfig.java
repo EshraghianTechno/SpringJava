@@ -40,13 +40,13 @@ public class WebConfig implements WebMvcConfigurer {
         configurer.setUrlPathHelper(urlPathHelper);
     }
 
-    @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-
-        converters.add(new StringHttpMessageConverter());
-        //converters.add(new Jaxb2RootElementHttpMessageConverter());
-        converters.add(new MappingJackson2HttpMessageConverter());
-    }
+//    @Override
+//    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//
+//        converters.add(new StringHttpMessageConverter());
+//        //converters.add(new Jaxb2RootElementHttpMessageConverter());
+//        converters.add(new MappingJackson2HttpMessageConverter());
+//    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

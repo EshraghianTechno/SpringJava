@@ -9,8 +9,7 @@ public class C10RequestEventListener {
 
 
     @EventListener
-    public void request(RequestHandledEvent event)
-    {
-        System.out.println("8888"+event.toString());
+    public void request(RequestHandledEvent event) {
+        System.out.println("8888" + event.toString());
     }
 }

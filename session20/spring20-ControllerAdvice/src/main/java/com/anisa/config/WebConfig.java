@@ -15,7 +15,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages ={"com.anisa"} )
+@ComponentScan(basePackages = {"com.anisa"})
 public class WebConfig implements WebMvcConfigurer {
 
     @Override
@@ -24,9 +24,8 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public ViewResolver viewResolver()
-    {
-        InternalResourceViewResolver viewResolver=new InternalResourceViewResolver();
+    public ViewResolver viewResolver() {
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
         return viewResolver;
@@ -34,7 +33,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void configurePathMatch(PathMatchConfigurer configurer) {
-        UrlPathHelper urlPathHelper=new UrlPathHelper();
+        UrlPathHelper urlPathHelper = new UrlPathHelper();
         urlPathHelper.setRemoveSemicolonContent(false);
         configurer.setUrlPathHelper(urlPathHelper);
     }
@@ -49,6 +48,6 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-      //  registry.addInterceptor(new MyInterceptor());
+        //  registry.addInterceptor(new MyInterceptor());
     }
 }

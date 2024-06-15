@@ -28,15 +28,21 @@ public class CartController {
         model.addAttribute("card", shoppingCart);
         return "redirect:" + "product-page";
     }
-
+//my method
     @GetMapping("product-page")
-    public String viewProductCart(Model model, @ModelAttribute("shoppingCart") ShoppingCart shoppingCart) {
-        if (shoppingCart != null)
-            model.addAttribute("card", shoppingCart);
-        else
-            model.addAttribute("card", new ShoppingCart());
+    public String viewProductCart() {
         return "addToCart";
     }
+
+    // Ostad method
+//    @GetMapping("product-page")
+//    public String viewProductCart(Model model, @ModelAttribute("shoppingCart") ShoppingCart shoppingCart) {
+//        if (shoppingCart != null)
+//            model.addAttribute("card", shoppingCart);
+//        else
+//            model.addAttribute("card", new ShoppingCart());
+//        return "addToCart";
+//    }
 
     @GetMapping("/card")
     public String cart(@SessionAttribute("shoppingCart") ShoppingCart card, Model model) {

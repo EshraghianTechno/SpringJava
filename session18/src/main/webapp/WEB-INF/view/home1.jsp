@@ -14,9 +14,10 @@
 home
 
 <%
-    Product product =(Product) request.getAttribute("product");
+    Product product = (Product) request.getAttribute("product");
     out.print(request.getMethod());
     out.print(product.getName());
+    out.print(product.getId());
 %>
 
 <br>

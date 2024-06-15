@@ -34,9 +34,8 @@ public class WebConfig2 implements WebMvcConfigurer {
         return bean;
     }
     @Bean
-//    @Scope("singleton")
-
-    @Scope(value = WebApplicationContext.SCOPE_APPLICATION)
+    @Scope("singleton")
+//    @Scope(value = WebApplicationContext.SCOPE_APPLICATION)
     public ApplicationScopeClass pref() {
         return new ApplicationScopeClass();
     }
