@@ -5,7 +5,7 @@
   <artifactId>SpringMvcHibernate</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>SpringMvcHibernate Maven Webapp</name>
+  <name>session20-SpringMvcHibernate</name>
   <url>http://maven.apache.org</url>
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -56,7 +56,7 @@
       <version>2.13.5</version>
     </dependency>
 
-
+<!-- for repository layer-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
@@ -81,6 +81,8 @@
       <version>0.9.5.5</version>
     </dependency>
 
+    <!-- for repository layer-->
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
@@ -89,6 +91,13 @@
 
   </dependencies>
   <build>
-    <finalName>SpringMvcHibernate</finalName>
+<!--    <finalName>SpringMvcHibernate</finalName>-->
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+    </plugins>
   </build>
 </project>

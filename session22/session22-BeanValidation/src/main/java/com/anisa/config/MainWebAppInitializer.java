@@ -14,7 +14,6 @@ public class MainWebAppInitializer implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext root = new AnnotationConfigWebApplicationContext();
 
         root.scan("com.anisa");
-
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(root));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");

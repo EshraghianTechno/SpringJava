@@ -2,16 +2,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
-    <artifactId>SpringMVCExceptionHandling</artifactId>
+    <artifactId>BeanValidation</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>session20-SpringMVCExceptionHandling</name>
+    <name>session22-BeanValidation</name>
     <url>http://maven.apache.org</url>
-
-
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -57,9 +55,21 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.13.5</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.2.5.Final</version>
+        </dependency>
     </dependencies>
     <build>
-        <!--    <finalName>SpringMVCExceptionHandling</finalName>-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -50,64 +50,12 @@ public class WebConfig implements WebMvcConfigurer {
         converters.add(new MappingJackson2HttpMessageConverter());
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-      //  registry.addInterceptor(new MyInterceptor());
-        registry.addInterceptor(new HandlerInterceptor() {
-            @Override
-            public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
-                if (request.getParameter("param")!=null)
-                {
-                    throw  new Exception("");
-                }
-                return true;
-            }
-        });
-    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources");
     }
 
-    /* @Bean
-    public HandlerExceptionResolver handlerExceptionResolver()
-    {
-        return  new HandlerExceptionResolver() {
-            @Override
-            public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
-
-                ModelAndView modelAndView=new ModelAndView();
-                modelAndView.setViewName("error-page");
-                modelAndView.addObject("exceptionType",ex);
-                return modelAndView;
-            }
-        };
-    }*/
-
-   /* @Bean
-    public HandlerExceptionResolver handlerExceptionResolver()
-    {
-        SimpleMappingExceptionResolver resolver=new SimpleMappingExceptionResolver();
-
-
-        //mapping based on error
-        Properties mapping=new Properties();
-        mapping.put("java.lang.NullPointerException","error1");
-        mapping.put("java.lang.ArithmeticException","error2");
-        //mapping base on statusCode
-        Properties mapping2=new Properties();
-        mapping2.put("error-page","400");
-        mapping2.put("error-page2","500");
-
-        resolver.setExceptionMappings(mapping);
-
-        return resolver;
-    }*/
-
-
-    //4
 
 
 }

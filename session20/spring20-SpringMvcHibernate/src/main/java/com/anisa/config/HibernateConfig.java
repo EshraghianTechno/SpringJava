@@ -25,31 +25,17 @@ public class HibernateConfig {
     @Autowired
     Environment environment;
 
-
     @Bean
     public DataSource dataSource() throws PropertyVetoException {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
-
         dataSource.setDriverClass(environment.getProperty("jdbc.driverClassName"));
         dataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
         dataSource.setUser(environment.getProperty("jdbc.username"));
         dataSource.setPassword(environment.getProperty("jdbc.password"));
-
         return dataSource;
     }
 
-    @Bean
-    public SessionFactory hibernateSession() throws IOException, PropertyVetoException {
-        LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        sessionFactoryBean.setHibernateProperties(hibernateProperties());
-        sessionFactoryBean.setPackagesToScan("com.anisa.entity");
-        sessionFactoryBean.setDataSource(dataSource());
-        sessionFactoryBean.afterPropertiesSet();
-        return sessionFactoryBean.getObject();
-    }
-
     public Properties hibernateProperties() {
-
         Properties props = new Properties();
         props.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         props.put("hibernate.show_sql", true);
@@ -61,6 +47,16 @@ public class HibernateConfig {
         props.put("hibernate.hbm2ddl.auto", "update");
         return props;
 
+    }
+
+    @Bean
+    public SessionFactory hibernateSession() throws IOException, PropertyVetoException {
+        LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
+        sessionFactoryBean.setHibernateProperties(hibernateProperties());
+        sessionFactoryBean.setPackagesToScan("com.anisa.entity");
+        sessionFactoryBean.setDataSource(dataSource());
+        sessionFactoryBean.afterPropertiesSet();
+        return sessionFactoryBean.getObject();
     }
 
     @Bean
