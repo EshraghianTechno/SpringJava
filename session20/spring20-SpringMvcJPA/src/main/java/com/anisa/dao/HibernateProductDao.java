@@ -28,6 +28,7 @@ public class HibernateProductDao implements ProductDao {
 
     @Override
     public Product getProduct(Long id) {
+
         return entityManager.find(Product.class, id);
     }
 

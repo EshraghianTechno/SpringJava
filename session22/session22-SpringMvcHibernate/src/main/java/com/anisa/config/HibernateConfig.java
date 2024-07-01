@@ -43,7 +43,7 @@ public class HibernateConfig {
         sessionFactoryBean.setHibernateProperties(hibernateProperties());
         sessionFactoryBean.setPackagesToScan("com.anisa.entity");
         sessionFactoryBean.setDataSource(dataSource());
-        sessionFactoryBean.afterPropertiesSet();
+//        sessionFactoryBean.afterPropertiesSet();
         return sessionFactoryBean.getObject();
     }
 

@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 public class ProductServiceImpl implements ProductService {
 
 
@@ -16,25 +17,25 @@ public class ProductServiceImpl implements ProductService {
     private ProductDao productDao;
 
     @Override
-    @Transactional
+//    @Transactional
     public List<Product> getProducts() {
         return productDao.getProducts();
     }
 
     @Override
-    @Transactional
+//    @Transactional
     public void saveProduct(Product product) {
         productDao.saveProduct(product);
     }
 
     @Override
-    @Transactional
+//    @Transactional
     public Product getProduct(Long id) {
         return productDao.getProduct(id);
     }
 
     @Override
-    @Transactional
+//    @Transactional
     public void deleteProduct(Long id) {
         productDao.deleteProduct(id);
     }
