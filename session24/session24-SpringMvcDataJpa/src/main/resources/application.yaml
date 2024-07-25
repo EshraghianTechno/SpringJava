@@ -2,14 +2,22 @@ server:
   port: 8080
 
 
+#  jdbc.driverClassName=org.h2.Driver
+#  jdbc.url=jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;
+#  jdbc.username=sa
+#  jdbc.password=1234
 
 spring:
   datasource:
-    username: root
+    username: sa
     password: 1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/myspringdata
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;
 
+  h2:
+    console:
+      enable: true
+      path: /console
 
   jpa:
     hibernate:

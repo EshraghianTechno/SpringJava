@@ -39,7 +39,6 @@ public class ProductController {
         return "redirect:allProducts";
     }
 
-
     //update
     @GetMapping("/formForUpdate")
     public String formForUpdate(@RequestParam("ProductId") Long id,Model model)

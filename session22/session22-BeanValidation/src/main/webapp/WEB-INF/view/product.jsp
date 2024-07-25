@@ -14,7 +14,7 @@
 <form:form action="processForm" method="post" modelAttribute="product">
     id : <form:input path="id"/><br>
     name : <form:input path="name"/>
-    <form:errors path="name" cssClass="error"+/><br>
+    <form:errors path="name" cssClass="error"/><br>
     description : <form:input path="description"/><br>
     price : <form:input path="price"/>
     <form:errors path="price" cssClass="error"/><br>

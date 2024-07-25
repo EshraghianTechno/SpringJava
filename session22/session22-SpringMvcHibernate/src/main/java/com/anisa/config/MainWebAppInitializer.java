@@ -6,6 +6,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
+import org.h2.server.web.WebServlet;
+
 
 public class MainWebAppInitializer implements WebApplicationInitializer {
     @Override
@@ -17,6 +19,8 @@ public class MainWebAppInitializer implements WebApplicationInitializer {
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(root));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
+        ServletRegistration.Dynamic servlet = servletContext.addServlet("h2-console", new WebServlet());
+        servlet.addMapping("/console/*");
     }
 
 }

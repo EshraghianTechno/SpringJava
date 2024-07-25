@@ -5,6 +5,7 @@ import com.anisa.exception.ProductNotFoundException;
 import com.anisa.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -28,7 +29,7 @@ public class ProductRestController {
     @GetMapping("/{id}")
     public Product getProduct(@PathVariable Long id) {
         Optional<Product> product = productService.getProduct(id);
-        product.orElseThrow(() -> new ProductNotFoundException("product is not found with id" + id));
+        product.orElseThrow(() -> new ProductNotFoundException("product is not found with id " + id));
         return product.get();
     }
 

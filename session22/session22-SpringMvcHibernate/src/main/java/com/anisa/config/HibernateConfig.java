@@ -18,7 +18,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@PropertySource("classpath:properties-hibernate.properties")
+@PropertySource("classpath:properties-hibernate-session22.properties")
 public class HibernateConfig {
 
     @Autowired
@@ -43,14 +43,15 @@ public class HibernateConfig {
         sessionFactoryBean.setHibernateProperties(hibernateProperties());
         sessionFactoryBean.setPackagesToScan("com.anisa.entity");
         sessionFactoryBean.setDataSource(dataSource());
-//        sessionFactoryBean.afterPropertiesSet();
+        sessionFactoryBean.afterPropertiesSet();
         return sessionFactoryBean.getObject();
     }
 
     public Properties hibernateProperties() {
 
         Properties props = new Properties();
-        props.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+//        props.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+        props.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         props.put("hibernate.show_sql", true);
         props.put("hibernate.format_sql", true);
         props.put("hibernate.use_sql_comments", true);
